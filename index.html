@@ -4,67 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="footer.css">
+    
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
     <title>ClonePage MaDonald's</title>
 </head>
 <body>
     <header>
-        <div>
-            <h1><img src="img/logo.png" alt="logo McDonald"></h1>
-        </div>
-        <div>
-            <nav class="barra_um">
-                <li>Lançamentos</li>
-                <li>Quem Somos</li>
-                <li>Família</li>
-                <li>Promoções</li>
-                <li>Méqui para você</li>
-                <li>McDia Feliz</li>
-            </nav>
-
-            <nav class="barra_dois">
-                <li>Compre Sem Fila</li>
-                <li>Trabalhe Conosco</li>
-                <li>Fale Conosco</li>
-                <li>Méqui mais Próximo</li>
-            </nav>
-        </div>
-
-        <div>
-            <input type="submit" value="Peça em casa">
+        <div class="header_container">
+            <div class="logo_header_container">
+                <h1><img class="logo_header" src="img/logo.png" alt="logo McDonald"></h1>
+            </div>
+            <div class="menu_cta"><img src="img/icn_menu.svg" alt=""></div>
+            <div class="nav">
+                <nav class="barra_um">
+                    <li>Lançamentos</li>
+                    <li>Quem Somos</li>
+                    <li>Família</li>
+                    <li>Promoções</li>
+                    <li>Méqui para você</li>
+                    <li>McDia Feliz</li>
+                </nav>
+                <nav class="barra_dois">
+                    <li>Compre Sem Fila</li>
+                    <li>Trabalhe Conosco</li>
+                    <li>Fale Conosco</li>
+                    <li>Méqui mais Próximo</li>
+                </nav>
+            </div>
+            <div class="peca_em_casa_container">
+                <input type="submit" value="Peça em Casa">
+            </div>
         </div>
     </header>
 
     <main>
         <section class="hero">
-            <div class="lancamentos_container">
-                <h2>Lançamentos</h2>
-                <p>McLanche Feliz</p>
+            <div class="lancamentos">
+                <div class="lancamentos_container">
+                    <h2>Lançamentos</h2>
+                    <p>McLanche Feliz</p>
+                </div>
             </div>
             <div class="lancamentos_texto">
-                <p class="negrito">Os 10 brinquedos de Space Jam> Um Novo Legado chegaram ao McLanche Feliz</p>
+                <p class="negrito">Os 10 brinquedos de Space Jam: Um Novo Legado chegaram ao McLanche Feliz!</p>
                 <p>Os personagens trazem de volta toda a diversão e as travessuras dos Looney Tunes, juntamente com o talento incomparável de uma das maiores estrelas da NBA: LeBron James.</p>
             </div>
         </section>
 
         <section class="slide">
-            <div class="glider_wrap">
-                <div class="glider_container">
+            <div class="grid_wrap">
+                <div class="grid_container">
                     <div class="glider">
-                        <div><img src="img/slide1.png" alt=""></div>
+                        <div>
+                            <img src="img/slide1.png" alt="">
+                            <p class="nome_slide">Frajola</p>
+                            <p>Coloque a bola na mão do Frajola e aperte o botão em suas costas para fazer girar a bola de basquete em sua mão.</p>
+                        </div>
                         <div><img src="img/slide2.png" alt=""></div>
                         <div><img src="img/slide3.png" alt=""></div>
                         <div><img src="img/slide4.png" alt=""></div>
                         <div><img src="img/slide5.png" alt=""></div>
                         <div><img src="img/slide6.png" alt=""></div>
-                        <div><img src="img/slide7.png" alt=""></div>
+                        <div><img src="img/slide10.png" alt=""></div>
                         <div><img src="img/slide8.png" alt=""></div>
                         <div><img src="img/slide9.png" alt=""></div>
-                        <div><img src="img/slide10.png" alt=""></div>
+                        <div><img src="img/slide7.png" alt=""></div> 
                     </div>
-
-                    <button aria-label="Previous" class="glider-prev"><img src="img/icn_seta_esquerda.svg" alt=""></button>
-                    <button aria-label="Next" class="glider-next"><img src="img/icn_seta_direita.svg" alt=""></button>
-                    <div role="tablist" class="dots"></div>
+                    
+                    <button aria-label="Previous" class="glider-prev"></button>
+                    <button aria-label="Next" class="glider-next"></button>
+                    <div class="dots" role="tablist"></div>
                 </div>
             </div>
         </section>
@@ -74,26 +87,26 @@
                 <img src="img/saiba_mais_mcLanche.png" alt="caixa de mclanche feliz">
                 <h3>McLanche Feliz</h3>
                 <p>Um menu infantil muito divertido</p>
-                <input type="submit" alue="Saiba mais">
+                <a href="#" class="saibaMais_btn">Saiba mais</a>
             </div>
 
             <div class="saibaMais_container">
                 <img src="img/saiba_mais_family_box.png" alt="familia rindo">
                 <h3>Méqui Box</h3>
                 <p>Um jeito fácil e econômico de pedir Méqui para todo tipo de família e de galera.</p>
-                <input type="submit" value="Saiba mais">
+                <a href="#" class="saibaMais_btn">Saiba mais</a>
             </div>
         </section>
 
         <section class="app">
             <div class="app_container">
-                <div><img src="img/logo_transparente.png" alt="logo mcDonald"></div>
-                <div>
+                <div class="app_img"><img src="img/logo_transparente.png" alt="logo mcDonald"></div>
+                <div class="baixeAgora_container">
                     <h2>Já baixou o App do Méqui?</h2>
                     <p>Tenha cupons, stickers, delivery e muito mais na sua tela</p>
-                    <input type="submit" value="Baixe agora">
                 </div>
             </div>
+            <a class="app_btn" href="#">Baixe agora</a>
         </section>
     </main>
 
@@ -101,7 +114,9 @@
         <section class="info">
             <div class="info_container">
                 <div>
-                    <li>Quem Somos</li>
+                    <div class="info_primeiro">
+                        <li>Quem Somos</li>
+                    </div>
                     <div class="info_mais">
                         <li>Institucional</li>
                         <li>Franquias</li>
@@ -113,7 +128,9 @@
                     </div>
                 </div>
                 <div>
-                    <li>Família</li>
+                    <div class="info_primeiro">
+                        <li>Família</li>
+                    </div>
                     <div class="info_mais">
                         <li>Lançamentos</li>
                         <li>McLanche Feliz</li>
@@ -123,7 +140,9 @@
                     </div>
                 </div>
                 <div>
-                    <li>Méqui para você</li>
+                    <div class="info_primeiro">
+                        <li>Méqui para você</li>
+                    </div>
                     <div class="info_mais">
                         <li>App do Méqui</li>
                         <li>McDelivery</li>
@@ -135,7 +154,9 @@
                     </div>
                 </div>
                 <div>
-                    <li>Contato</li>
+                    <div class="info_primeiro">
+                        <li>Contato</li>
+                    </div>
                     <div class="info_mais">
                         <li>Contato</li>
                     </div>
@@ -155,19 +176,23 @@
                 <li><img src="img/ft_app_store.png" alt="icone apple store"></li>
                 <li><img src="img/ft_google_play.png" alt="icone google play"></li>
             </div>
+
+            <div class="linha_footer"></div>
         </section>
 
         <section class="rodape">
-            <div>
+            <div class="rodape_items">
                 <a href="#">Privacidade</a>
-                <a href="Termos e Condições"></a>
+                <a href="#">Termos e Condições</a>
             </div>
 
-            <div>
+            <div class="rodape_copyRight">
                 <img src="img/logo.png" alt="logo mcDonald">
                 <p>&copy; McDonald's 2021</p>
             </div>
         </section>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+<script src="glider.js"></script>
 </html>

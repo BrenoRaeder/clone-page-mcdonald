@@ -1,0 +1,74 @@
+
+:root{
+    --amarelo: #ffb800;
+}
+
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #292929;
+}
+
+.header_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3em;
+}
+
+.logo_header_container{
+    width: 10%;
+}
+
+.logo_header{
+    width: 95%;
+}
+
+h1{
+    margin: 0;
+    height: 40px;
+}
+
+nav{
+    display: none;
+}
+
+.menu_cta{
+    width: 10%;
+    height: 100%;
+    margin-bottom: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.menu_cta:hover{
+    background: #e4e1e1;
+}
+
+.menu_cta img{
+    width: 50%;
+    
+}
+
+.peca_em_casa_container{
+    width: 80%;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.peca_em_casa_container input
+{
+    color: #000000B3;
+    padding: 5px;
+    height: 33px;
+    min-width: 114px;
+    font-size: .8em;
+    border: none;
+    border-radius: 6%;
+    background: var(--amarelo);
+    cursor: pointer;
+}
