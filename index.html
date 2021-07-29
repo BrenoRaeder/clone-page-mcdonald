@@ -10,17 +10,19 @@
     <link rel="stylesheet" href="footer.css">
     
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <script src="menu.js"></script>
     <title>ClonePage MaDonald's</title>
 </head>
 <body>
     <header>
-        <div class="header_container">
-            <div class="logo_header_container">
+        <div class="header_container" id="container_header">
+            <div class="logo_header_container" id="logo_header">
                 <h1><img class="logo_header" src="img/logo.png" alt="logo McDonald"></h1>
+                <img class="fechar_menu_cta" id="fechar_menu" src="img/icn_x.svg" alt="" onclick="fecharMenu()">
             </div>
-            <div class="menu_cta"><img src="img/icn_menu.svg" alt=""></div>
-            <div class="nav">
-                <nav class="barra_um">
+            <div class="menu_cta" onclick="mostrarMenu()" id="menu_cta"><img src="img/icn_menu.svg" alt=""></div>
+            <div class="nav" id="nav">
+                <nav class="barra_um" id="barra_um">
                     <li>Lançamentos</li>
                     <li>Quem Somos</li>
                     <li>Família</li>
@@ -28,14 +30,15 @@
                     <li>Méqui para você</li>
                     <li>McDia Feliz</li>
                 </nav>
-                <nav class="barra_dois">
+                <div class="linha_barra"></div>
+                <nav class="barra_dois" id="barra_dois">
                     <li>Compre Sem Fila</li>
                     <li>Trabalhe Conosco</li>
                     <li>Fale Conosco</li>
                     <li>Méqui mais Próximo</li>
                 </nav>
             </div>
-            <div class="peca_em_casa_container">
+            <div class="peca_em_casa_container" id="peca_btn">
                 <input type="submit" value="Peça em Casa">
             </div>
         </div>
