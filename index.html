@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="footer.css">
     
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    
     <script src="menu.js"></script>
+    
     <title>ClonePage MaDonald's</title>
 </head>
 <body>
@@ -23,19 +26,34 @@
             <div class="menu_cta" onclick="mostrarMenu()" id="menu_cta"><img src="img/icn_menu.svg" alt=""></div>
             <div class="nav" id="nav">
                 <nav class="barra_um" id="barra_um">
-                    <li>Lançamentos</li>
-                    <li>Quem Somos</li>
-                    <li>Família</li>
-                    <li>Promoções</li>
-                    <li>Méqui para você</li>
-                    <li>McDia Feliz</li>
+                    <div>
+                        <li>Lançamentos</li>
+                    </div>
+                    <div>
+                        <li>Quem Somos</li>
+                    </div>
+                    <div>
+                        <li>Família</li>
+                    </div>
+                    <div>
+                        <li>Promoções</li>
+                    </div>
+                    <div>
+                        <li>Méqui para você</li>
+                    </div>
+                    <div>
+                        <li>McDia Feliz</li>
+                    </div>
                 </nav>
                 <div class="linha_barra"></div>
                 <nav class="barra_dois" id="barra_dois">
-                    <li>Compre Sem Fila</li>
                     <li>Trabalhe Conosco</li>
                     <li>Fale Conosco</li>
                     <li>Méqui mais Próximo</li>
+                    <li>Compre Sem Fila</li>
+                    <div class="nav_peca_em_casa_container" id="nav_peca_btn">
+                        <input type="submit" value="Peça em Casa">
+                    </div>
                 </nav>
             </div>
             <div class="peca_em_casa_container" id="peca_btn">
@@ -101,22 +119,24 @@
             </div>
         </section>
 
-        <section class="app">
-            <div class="app_container">
+        <section class="app_section">
+            <div class="app">
                 <div class="app_img"><img src="img/logo_transparente.png" alt="logo mcDonald"></div>
-                <div class="baixeAgora_container">
-                    <h2>Já baixou o App do Méqui?</h2>
-                    <p>Tenha cupons, stickers, delivery e muito mais na sua tela</p>
+                <div class="app_container">
+                    <div class="baixeAgora_container">
+                        <h2>Já baixou o App do Méqui?</h2>
+                        <p>Tenha cupons, stickers, delivery e muito mais na sua tela</p>
+                    </div>
+                    <a class="app_btn" href="#">Baixe agora</a>
                 </div>
             </div>
-            <a class="app_btn" href="#">Baixe agora</a>
         </section>
     </main>
 
     <footer>
         <section class="info">
             <div class="info_container">
-                <div>
+                <div class="info_colunas">
                     <div class="info_primeiro">
                         <li>Quem Somos</li>
                     </div>
@@ -130,7 +150,7 @@
                         <li>Publicidade Reponsável</li>
                     </div>
                 </div>
-                <div>
+                <div class="info_colunas">
                     <div class="info_primeiro">
                         <li>Família</li>
                     </div>
@@ -142,7 +162,7 @@
                         <li>Compromisso com as Famílias</li>
                     </div>
                 </div>
-                <div>
+                <div class="info_colunas">
                     <div class="info_primeiro">
                         <li>Méqui para você</li>
                     </div>
@@ -156,7 +176,7 @@
                         <li>Drive-Thru</li>
                     </div>
                 </div>
-                <div>
+                <div class="info_colunas"> 
                     <div class="info_primeiro">
                         <li>Contato</li>
                     </div>
@@ -166,18 +186,19 @@
                 </div>
             </div>
 
-            <div class="redes">
-                <ul class="redes">
-                    <li><img src="img/icn_facebook.svg" alt="icone facebook"></li>
-                    <li><img src="img/icn_twitter.svg" alt="icone twitter"></li>
-                    <li><img src="img/icn_instagram.svg" alt="icone instagram"></li>
-                    <li><img src="img/icn_youtube.svg" alt="icone youtube"></li>
-                </ul>
-            </div>
-
-            <div class="appStore">
-                <li><img src="img/ft_app_store.png" alt="icone apple store"></li>
-                <li><img src="img/ft_google_play.png" alt="icone google play"></li>
+            <div class="redes-app">
+                <div class="redes">
+                    <ul class="redes">
+                        <li><img src="img/icn_facebook.svg" alt="icone facebook"></li>
+                        <li><img src="img/icn_twitter.svg" alt="icone twitter"></li>
+                        <li><img src="img/icn_instagram.svg" alt="icone instagram"></li>
+                        <li><img src="img/icn_youtube.svg" alt="icone youtube"></li>
+                    </ul>
+                </div>
+                <div class="appStore">
+                    <li><img src="img/ft_app_store.png" alt="icone apple store"></li>
+                    <li><img src="img/ft_google_play.png" alt="icone google play"></li>
+                </div>
             </div>
 
             <div class="linha_footer"></div>

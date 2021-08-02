@@ -112,23 +112,30 @@
 
 /**/
 
+.app_section{
+    background: var(--amarelo);
+}
+
 .app{
-    background: var(--amarelo);
     padding-bottom: 2em;
-}
-
-.app_container{
     display: flex;
-    background: var(--amarelo);
-}
-
-.app_container img{
-    width: 10vw;
 }
 
 .app_img{
     width: 15%;
-    padding: 1em 0;
+    padding: 1em 0 1em 1em;
+}
+
+.app_img img{
+    width: 100%;
+}
+
+.app_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--amarelo);
 }
 
 .baixeAgora_container{
@@ -139,7 +146,7 @@
 }
 
 .baixeAgora_container h2{
-    font-size: 1.5em;
+    font-size: 5vw;
 }
 
 .baixeAgora_container p{
@@ -155,4 +162,118 @@
     width: 6em;
     background: #fff;
     border-radius: 5%;
+}
+
+@media only screen and (min-width: 770px)
+{
+    .saiba_mais{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .saiba_mais p{
+        height: 15%;
+    }
+
+    .saibaMais_container{
+        width: 45%;
+        height: 53vh;
+    }
+
+    .slide img{
+        width: 15vw;
+    }
+
+    .slide p{
+        font-size: 1em;
+        width: 22vw;
+    }
+}
+
+@media only screen and (min-width: 1020px){
+    .hero{
+        width: 80%;
+        margin: auto;
+        margin-top: 2em;
+    }
+
+    .lancamentos{
+        display: flex;
+        height: 55vh;
+    }
+
+    .lancamentos_container{
+        text-align: left; 
+        justify-content: center;
+        width: 88%;
+        margin-top: 0;
+    }
+
+    .lancamentos_container h2{
+        font-size: 3.4em;
+    }
+
+    .lancamentos_container p{
+        font-size: 1em;
+        padding-bottom: 3em; 
+    }
+
+    .lancamentos_texto{
+        padding-top: 50px;
+        font-size: 16px;
+    }
+
+    /**/
+
+    .saiba_mais{
+        width: 88%;
+        margin: 4em auto;
+    }
+
+    .saibaMais_container{
+        width: 45%;
+        height: 60vh;
+    }
+
+    .saiba_mais p{
+        width: 60%;
+        height: 50%;
+        margin: auto; 
+        font-size: .93em;
+    }
+
+    .saibaMais_btn{
+       font-size: .93em;
+    }
+
+    /**/
+
+    .app{
+        margin-top: 4em;
+        width: 80%;
+        margin: auto;
+    }
+
+    .app_container{
+        flex-direction: row;
+    }
+
+    .app_container div{
+        width: 80%;
+        text-align: center;
+        padding-left: 40px;
+    }
+
+    .baixeAgora_container h2{
+        font-size: 2.5em;
+        margin-bottom: 0;
+    }
+
+    .baixeAgora_container p{
+        font-size: 1em;
+    }
+
+    .app_btn{
+        font-size: 1em;
+    }
 }

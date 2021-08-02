@@ -103,3 +103,81 @@
     justify-content: stretch;
 }
 
+@media only screen and (min-width:1020px){
+
+    .info_container{
+        flex-direction: row;
+        width: 70%;
+        justify-content: space-between;
+        padding: 4em 0 4em 150px;
+    }
+
+    .info_colunas{
+        width: 18%;
+        text-align: left;
+    }
+
+    .info_primeiro{
+        margin: 0;
+        padding-bottom: 1em;
+    }
+
+    .info_primeiro{
+        font-size: 16px;
+        padding-bottom: 1.5em;
+    }
+
+    .info_mais li{
+        display: flex;
+        font-size: 16px;
+        padding-bottom: 1.2em;
+        line-height: 1.1em; 
+        cursor: pointer; 
+    }
+
+    .info_mais li:hover{
+        color: #292929;
+    }
+
+    /**/
+
+    .redes-app{
+        display: flex;
+        justify-content: space-around; 
+        width: 100%;
+        align-items: center;
+        padding-bottom: 2em;
+    }
+
+    .appStore{
+        width: 30%;
+    }
+
+    .appStore img{
+        height: 90%;
+    }
+
+    .linha_footer{
+        width: 80%;
+        margin: auto; 
+    }
+
+    /**/
+
+    .rodape{
+        flex-direction: row;
+        font-size: 1em;
+        padding: 1em 0;
+        align-items: center;
+    }
+
+    .rodape_items{
+        width: 260px;
+        padding: 0;
+    }
+
+    .rodape_copyRight{
+        width: 200px;
+        padding-bottom: 4px;
+    }
+}
