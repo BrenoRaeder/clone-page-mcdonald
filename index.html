@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/footer.css">
     
-    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="src/img/mc-logo.png" type="image/x-icon">
     
-    <script src="menu.js"></script>
+    <script src="src/js/menu.js"></script>
     
     <title>ClonePage MaDonald's</title>
 </head>
@@ -20,10 +20,10 @@
     <header>
         <div class="header_container" id="container_header">
             <div class="logo_header_container" id="logo_header">
-                <h1><img class="logo_header" src="img/logo.png" alt="logo McDonald"></h1>
-                <img class="fechar_menu_cta" id="fechar_menu" src="img/icn_x.svg" alt="" onclick="fecharMenu()">
+                <h1><img class="logo_header" src="src/img/logo.png" alt="logo McDonald"></h1>
+                <img class="fechar_menu_cta" id="fechar_menu" src="src/img/icn_x.svg" alt="" onclick="fecharMenu()">
             </div>
-            <div class="menu_cta" onclick="mostrarMenu()" id="menu_cta"><img src="img/icn_menu.svg" alt=""></div>
+            <div class="menu_cta" onclick="mostrarMenu()" id="menu_cta"><img src="src/img/icn_menu.svg" alt=""></div>
             <div class="nav" id="nav">
                 <nav class="barra_um" id="barra_um">
                     <div>
@@ -81,19 +81,55 @@
                 <div class="grid_container">
                     <div class="glider">
                         <div>
-                            <img src="img/slide1.png" alt="">
+                            <img src="src/img/slide1.png" alt="">
                             <p class="nome_slide">Frajola</p>
                             <p>Coloque a bola na mão do Frajola e aperte o botão em suas costas para fazer girar a bola de basquete em sua mão.</p>
                         </div>
-                        <div><img src="img/slide2.png" alt=""></div>
-                        <div><img src="img/slide3.png" alt=""></div>
-                        <div><img src="img/slide4.png" alt=""></div>
-                        <div><img src="img/slide5.png" alt=""></div>
-                        <div><img src="img/slide6.png" alt=""></div>
-                        <div><img src="img/slide10.png" alt=""></div>
-                        <div><img src="img/slide8.png" alt=""></div>
-                        <div><img src="img/slide9.png" alt=""></div>
-                        <div><img src="img/slide7.png" alt=""></div> 
+                        <div>
+                            <img src="src/img/slide2.png" alt="">
+                            <p class="nome_slide">Eufrazino</p>
+                            <p>Deslize o Eufrazino sobre uma superfície plana para ver quicar sobre sua bola de basquete.</p>
+                        </div>
+                        <div>
+                            <img src="src/img/slide3.png" alt="">
+                            <p class="nome_slide">Taz</p>
+                            <p>Dê corda ao tornado do Taz e solte para que ele se mova no círculo. Tente encestar a bola enquanto ele estiver em movimento!</p>
+                        </div>
+                        <div>
+                            <img src="src/img/slide4.png" alt="">
+                            <p class="nome_slide">Lola</p>
+                            <p>Coloque a bola nas orelhas da Lola e puxe as para trás. Depois, solte as para lançar a bola.</p>
+                        </div>
+                        <div>
+                            <img src="src/img/slide5.png" alt="">
+                            <p class="nome_slide">Hortelino Troca-Letras</p>
+                            <p>Lance a bola para encestar no aro e você vai ver como o chapéu do Hortelino pula.</p>
+                        </div>
+                        <div>
+                            <img src="src/img/slide6.png" alt="">
+                            <p class="nome_slide">Pernalonga</p>
+                            <p>Mova a alavanca nas costas do Pernalonga para mover suas orelhas e passar a bola de basquete de um lado para o outro.</p>
+                        </div>
+                        <div>
+                            <img src="src/img/slide10.png" alt="">
+                            <p class="nome_slide">Patolino</p>
+                            <p>Coloque a bola nos pés do Patolino e, depois, aperte o botão na sua perna para ver como ele lança a bola para a frente.</p>
+                        </div>
+                        <div>
+                            <img src="src/img/slide8.png" alt="">
+                            <p class="nome_slide">Coiote</p>
+                            <p>Coloque o Coiote em seu foguete e, depois, aperte o botão em suas costas para ver com sai voando.</p>
+                        </div>
+                        <div>
+                            <img src="src/img/slide9.png" alt="">
+                            <p class="nome_slide">Papa-Léguas</p>
+                            <p>Deslize o Papa-Léguas sobre uma superfície plana para ver como ele faz a bola quicar.</p>
+                        </div>
+                        <div>
+                            <img src="src/img/slide7.png" alt="">
+                            <p class="nome_slide">LeBron James</p>
+                            <p>Deslize a alavanca que está nas costas do LeBron para ver como ele joga a bola de uma mão à outra.</p>
+                        </div> 
                     </div>
                     
                     <button aria-label="Previous" class="glider-prev"></button>
@@ -105,14 +141,14 @@
 
         <section class="saiba_mais">
             <div class="saibaMais_container">
-                <img src="img/saiba_mais_mcLanche.png" alt="caixa de mclanche feliz">
+                <img src="src/img/saiba_mais_mcLanche.png" alt="caixa de mclanche feliz">
                 <h3>McLanche Feliz</h3>
                 <p>Um menu infantil muito divertido</p>
                 <a href="#" class="saibaMais_btn">Saiba mais</a>
             </div>
 
             <div class="saibaMais_container">
-                <img src="img/saiba_mais_family_box.png" alt="familia rindo">
+                <img src="src/img/saiba_mais_family_box.png" alt="familia rindo">
                 <h3>Méqui Box</h3>
                 <p>Um jeito fácil e econômico de pedir Méqui para todo tipo de família e de galera.</p>
                 <a href="#" class="saibaMais_btn">Saiba mais</a>
@@ -121,7 +157,7 @@
 
         <section class="app_section">
             <div class="app">
-                <div class="app_img"><img src="img/logo_transparente.png" alt="logo mcDonald"></div>
+                <div class="app_img"><img src="src/img/logo_transparente.png" alt="logo mcDonald"></div>
                 <div class="app_container">
                     <div class="baixeAgora_container">
                         <h2>Já baixou o App do Méqui?</h2>
@@ -189,15 +225,15 @@
             <div class="redes-app">
                 <div class="redes">
                     <ul class="redes">
-                        <li><img src="img/icn_facebook.svg" alt="icone facebook"></li>
-                        <li><img src="img/icn_twitter.svg" alt="icone twitter"></li>
-                        <li><img src="img/icn_instagram.svg" alt="icone instagram"></li>
-                        <li><img src="img/icn_youtube.svg" alt="icone youtube"></li>
+                        <li><img src="src/img/icn_facebook.svg" alt="icone facebook"></li>
+                        <li><img src="src/img/icn_twitter.svg" alt="icone twitter"></li>
+                        <li><img src="src/img/icn_instagram.svg" alt="icone instagram"></li>
+                        <li><img src="src/img/icn_youtube.svg" alt="icone youtube"></li>
                     </ul>
                 </div>
                 <div class="appStore">
-                    <li><img src="img/ft_app_store.png" alt="icone apple store"></li>
-                    <li><img src="img/ft_google_play.png" alt="icone google play"></li>
+                    <li><img src="src/img/ft_app_store.png" alt="icone apple store"></li>
+                    <li><img src="src/img/ft_google_play.png" alt="icone google play"></li>
                 </div>
             </div>
 
@@ -211,12 +247,12 @@
             </div>
 
             <div class="rodape_copyRight">
-                <img src="img/logo.png" alt="logo mcDonald">
+                <img src="src/img/logo.png" alt="logo mcDonald">
                 <p>&copy; McDonald's 2021</p>
             </div>
         </section>
     </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
-<script src="glider.js"></script>
+<script src="src/js/glider.js"></script>
 </html>

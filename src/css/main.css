@@ -1,7 +1,7 @@
 
 
 .lancamentos{
-    background: url("img/hero.png");
+    background: url("../img/hero.png");
     height: 40vw;
     background-repeat: no-repeat;
     background-size: cover;
@@ -179,18 +179,22 @@
         width: 45%;
         height: 53vh;
     }
-
-    .slide img{
-        width: 15vw;
-    }
-
-    .slide p{
-        font-size: 1em;
-        width: 22vw;
-    }
 }
 
 @media only screen and (min-width: 1020px){
+    
+    .slide img{
+        width: 18vw;
+    }
+
+    .slide p{
+        font-size: .9em;
+        width: 20vw;
+        padding-bottom: 10px;
+    }
+
+    /**/
+
     .hero{
         width: 80%;
         margin: auto;

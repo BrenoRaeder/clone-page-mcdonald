@@ -1,3 +1,5 @@
+let fechou = true;
+
 function mostrarMenu()
 {
     let container = document.getElementById("container_header"),
@@ -22,6 +24,8 @@ function mostrarMenu()
     abreMenu.classList.add("esconde");
 
     peca_btn.classList.add("esconde");
+
+    fechou = false;
 }
 
 function fecharMenu()
@@ -46,4 +50,22 @@ function fecharMenu()
     abreMenu.classList.remove("esconde");
 
     peca_btn.classList.remove("esconde");
+
+    fechou = true;
 }
+
+window.addEventListener('resize', function(event) {
+
+    let nav = document.getElementById("nav");
+
+    if(window.matchMedia("(min-width: 1020px)").matches)
+    {
+        fecharMenu();
+        document.getElementById("nav").style.display = "flex";
+    }
+    else if(window.matchMedia("width: 1019px"))
+    {   
+        if(fechou)
+        nav.style.display = "none";
+    }
+});
